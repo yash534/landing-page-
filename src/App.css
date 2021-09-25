@@ -1,38 +1,165 @@
+:root {
+  --darkBlue: #13253b;
+  --lightBlue: #2296d1;
+  --blue: #193b68;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
 .App {
-  text-align: center;
+  background: #fff url(./assets/vector/bg-1.svg) no-repeat left top;
+  background-size: 43%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*! ===Navbar=== */
+.navbar-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 5px 30px 5px 30px;
+  font-weight: lighter;
+  /* background-color: yellow; */
+}
+.logo-container {
+  display: flex;
+  width: 30%;
+  /* background-color: orange; */
+}
+.logo {
+  height: 50px;
+}
+.navlinks-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  gap: 25px;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+.navlinks-container h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.navlinks-container h3:hover {
+  text-decoration: underline;
+}
+
+/*! ===Navbar===END=== */
+
+/*! ===HOME HERO SECTION=== */
+.home-hero {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.col-1,
+.col-2 {
+  display: flex;
+}
+.col-1 {
+  padding-left: 80px;
+  align-items: center;
+  width: 50%;
+  /* background-color: yellow; */
+}
+.headphone-img {
+  width: 55%;
+  transition: transform 1.5s;
+}
+
+.headphone-img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.col-2 {
+  width: 50%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.product-heading {
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 300;
+  text-decoration: none;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.product-by {
+  font-size: 14px;
+}
+.product-by span {
+  color: rgb(235, 77, 77);
+}
+.rating {
+  width: 20px;
+  height: 20px;
+}
+.rating-empty {
+  width: 17px;
+  height: 17px;
+}
+.product-price {
+  font-family: Montserrat;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.product-description {
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.App-link {
-  color: #61dafb;
+.col-2 p {
+  width: 70%;
+  font-family: Montserrat;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buy-btn {
+  width: 20%;
+  margin-top: 20px;
+  background-color: var(--lightBlue);
+  border-color: var(--darkBlue);
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  height: 7%;
+  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.788);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
+
+.buy-btn:hover,
+.buy-btn:focus,
+.buy-btn:active {
+  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.788);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.buy-btn .btn-text {
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  padding-left: 32px;
+}
+
+/*! ===HOME HERO SECTION===END== */

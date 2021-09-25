@@ -1,0 +1,28 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 20% 10px 20%;
+  gap: 20px;
+}
+.about-heading {
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: 800;
+  color: #222222;
+  text-transform: uppercase;
+}
+.about-para {
+  font-family: Montserrat;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+}
+.about-subheading {
+  text-align: start;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 20px;
+}
