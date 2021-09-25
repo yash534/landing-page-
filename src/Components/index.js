@@ -10,4 +10,5 @@ export { default as RatingEmpty } from "./RatingEmpty";
 export { default as RatingFill } from "./RatingFill";
 export {default as About} from "./About";
 export {default as Feature} from "./Feature";
+export {default as Specification} from "./Specification";
 // ! <--===COMPONENTS===-->

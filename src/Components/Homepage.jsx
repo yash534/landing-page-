@@ -1,6 +1,6 @@
 import React from "react";
 import headphone from "../assets/img/headphones.svg";
-import { RatingEmpty, RatingFill, About, Feature} from "../Components";
+import { RatingEmpty, RatingFill, About, Feature, Specification} from "../Components";
 const Homepage = () => {
   return (
     <>
@@ -37,6 +37,10 @@ const Homepage = () => {
       {/* section-3  */}
       <Feature/>
       {/* section-3 end */}
+
+      {/* section-4  */}
+      <Specification />
+      {/* section-4 end */}
     </>
   );
 };

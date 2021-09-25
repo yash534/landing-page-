@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 10px 20% 10px 20%;
+  padding: 5em 15% 5em 15%;
   gap: 20px;
+  background: #fff url(../../assets/vector/bggg.svg) no-repeat left top;
+  background-size: contain;
+}
+.about-container-des {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px 5% 25px 5%;
+  border-radius: 80px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .about-heading {
   font-size: 40px;

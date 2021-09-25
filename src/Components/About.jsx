@@ -4,6 +4,7 @@ import "./Styles/About.css";
 function About() {
     return (
         <div className="about-container">
+        <div className="about-container-des">
         <h1 className="about-heading" id="about">About</h1>
         <p className="about-para">Utopia are THE reference high-fidelity headphones manufactured in France by Focal. They are the result of 40 years of innovation, development and manufacturing of high-end speaker drivers and loudspeakers. Equipped with exclusive technology, they offer striking realism, neutrality, dynamics and clarity, for sound with unrivalled purity.
 Utopia are unique they are the world’s first audiophile headphones to be equipped with totally open-backed full-range speaker drivers with pure Beryllium ’M’-shaped domes. They meet all the requirements expected of high-end headphones due to their sophisticated and elegant design and to purposeful materiality, such as the carbon fibre yoke and true lambskin leather ear cushions.</p>
@@ -20,6 +21,8 @@ Design is also a key point, be it in regards to the way of using the headphones,
 <br/>
 
 To fully enjoy your music and amplify yours emotions, pair with an audiophile DAC and amplifier to combine with your hi-fi headphones.</p>
+        </div>
+        
         </div>
     )
 }

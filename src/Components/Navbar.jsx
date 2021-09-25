@@ -18,8 +18,8 @@ const Navbar = () => {
           <h3>Home</h3>{" "}
         </Link>
         <h3> <a href="#about">About</a> </h3>
-        <h3>Features</h3>
-        <h3>Specifications</h3>
+        <h3> <a href="#feature">Features</a> </h3>
+        <h3> <a href="#specification">Specifications</a>  </h3>
         <h3>Contact</h3>
         {/* Cart icon */}
       </div>

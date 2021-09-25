@@ -1,21 +1,24 @@
-.feature-container {
+.specification-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 5em 20% 5em 20%;
   gap: 20px;
 }
-.feature-heading {
+.specification-heading {
   font-size: 40px;
   font-family: Montserrat;
   font-weight: 800;
   color: #222222;
   text-transform: uppercase;
 }
-.feature-para {
+.specification-para {
   font-family: Montserrat;
   text-align: justify;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
+}
+.space-para {
+  margin-left: 30px;
 }
