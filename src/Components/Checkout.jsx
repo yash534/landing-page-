@@ -1,8 +1,7 @@
 import React from "react";
 import headphone from "../assets/img/headphones.svg";
-import { RatingEmpty, RatingFill, Footer, Navbar } from "../Components";
+import { RatingEmpty, RatingFill, Navbar } from "../Components";
 import "./Styles/Checkout.css";
-import { Link } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
