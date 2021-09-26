@@ -1,6 +1,7 @@
 import React from "react";
 import headphone from "../assets/img/headphones.svg";
-import { RatingEmpty, RatingFill, About, Feature, Specification} from "../Components";
+import { RatingEmpty, RatingFill, About, Feature, Specification, Footer} from "../Components";
+import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
@@ -24,7 +25,12 @@ const Homepage = () => {
           <p className="product-description">
           Utopia are THE reference high-fidelity headphones manufactured in France by Focal. They are the result of 40 years of innovation, development and manufacturing of high-end speaker drivers and loudspeakers. Equipped with exclusive technology, they offer striking realism, neutrality, dynamics and clarity, for sound with unrivalled purity.
           </p>
-          <button className="buy-btn"><p className="btn-text">Buy Now</p></button>
+           
+          <button className="buy-btn">
+          <Link to="/checkout"><span className="btn-text">Buy Now</span>
+          </Link>
+          </button>
+          
         </div>
       </div>
       {/* section-1 end */}
@@ -41,6 +47,12 @@ const Homepage = () => {
       {/* section-4  */}
       <Specification />
       {/* section-4 end */}
+
+      {/* section-5 */}
+      <Footer/>
+      {/* section-5 end */}
+
+    
     </>
   );
 };
