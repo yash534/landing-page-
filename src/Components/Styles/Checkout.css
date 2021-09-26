@@ -1,8 +1,19 @@
 /*! ===HOME HERO SECTION=== */
+.main-container {
+  background-color: #fff;
+  height: 100vh;
+}
 .checkout-container {
   display: flex;
   width: 100%;
-  height: calc(100vh - 80px);
+}
+.checkout-navbar-container {
+  background-color: var(--blue);
+  margin-bottom: 30px;
+}
+.center-img {
+  /* margin-right: -50px; */
+  margin-left: 90px;
 }
 .col-one,
 .col-two {
@@ -62,7 +73,7 @@
   font-size: 22px;
   margin-bottom: 20px;
 }
-.product-description {
+.product-description-checkout {
   line-height: 20px;
   font-size: 16px;
   font-weight: bold;
@@ -74,35 +85,72 @@
   letter-spacing: 1px;
 }
 
-.checkout-btn {
-  width: 20%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  background-color: var(--lightBlue);
-  border-color: var(--darkBlue);
-  border-radius: 12px;
-  display: block;
-  cursor: pointer;
-  height: 7%;
-  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.788);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-
-.checkout-btn:hover,
-.buy-btn:focus,
-.buy-btn:active {
-  box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.788);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.checkout-btn span {
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  padding-left: 25px;
-}
-
 /*! ===HOME HERO SECTION===END== */
+.table-parent {
+  padding: 20px 30% 0px 0px;
+}
+.table-container {
+  border: solid rgb(235, 235, 235) 2px;
+  border-radius: 20px;
+}
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: solid rgb(235, 235, 235) 2px;
+}
+.row-4 {
+  border-bottom: none;
+}
+.icon-row-1 {
+  width: 30px;
+  color: rgb(231, 95, 95);
+}
+/* ---------------------- */
+.icon-container {
+  display: flex;
+  padding-top: 20px;
+  gap: 40px;
+}
+.icon-col-1,
+.icon-col-2,
+.icon-col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.icon-image {
+  width: 50px;
+}
+.icon-para {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =============== */
+.pay-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 15px 10px 15px;
+  width: 200px;
+  border: solid 2px var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+.pay-btn a {
+  color: var(--blue);
+  text-decoration: none;
+}
+.pay-btn:hover {
+  transform: scale(0.95);
+}
+.pay-btn:active {
+  transform: scale(0.9);
+}

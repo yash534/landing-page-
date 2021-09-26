@@ -1,11 +1,15 @@
 import React from "react";
 import headphone from "../assets/img/headphones.svg";
-import { RatingEmpty, RatingFill, About, Feature, Specification, Footer} from "../Components";
+import { RatingEmpty, Navbar, RatingFill, About, Feature, Specification, Footer} from "../Components";
 import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
     {/* Section-1 */}
+    <div className="navbar-container">
+            
+    <Navbar Home="Home" About="About" Features="Features" Specifications="Specifications" Contact="Contact" />
+        </div>
       <div className="home-hero">
         {/* image container */}
         <div className="col-1">
